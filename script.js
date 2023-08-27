@@ -51,3 +51,10 @@ function ajout(obj)
 ajout(car);
 console.log("car acceleration is "+ car.acceleration);
 
+// ============ addEventListener =====
+var btn= document.getElementById("btn");
+ btn.addEventListener("click",function(){
+ document.getElementById("hhh").textContent = "Goodbye";
+
+ });
+
