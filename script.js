@@ -30,10 +30,24 @@ console.log(names[1] );
 var car = {
     type :"AUDI",
     color :"BLACK",
-    speed : "1245"
+    speed : 1245
 
 };
 console.log(car.type );
 
 
+// ==== fct ===========
+function acceleration (obj){
+    return obj.speed * 5;
+}
+    console.log(acceleration(car));
+
+    // ======= ajout ====
+    
+function ajout(obj)
+{
+   obj.acceleration=acceleration(obj) ;
+}
+ajout(car);
+console.log("car acceleration is "+ car.acceleration);
 
